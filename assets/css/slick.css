@@ -1,0 +1,239 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+.container-profile {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.profile {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer
+}
+.profile p{
+    margin: 0 0 0 10px;
+}
+.dropdown{
+    width: 100%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition:all 2s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+.dropdown:hover .dropdown-content {
+    display: block
+}
+.notification ul{
+    background-color: #90cd9f;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    right: 100px;
+    top: 5px;
+    position: absolute;
+    padding: 8px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.profile ul {
+    background-color: #90cd9f;
+    width: 200px;
+    height: 140px;
+    border-radius: 10px;
+    right: 25px;
+    top: 35px;
+    position: absolute;
+    padding: 8px;
+    transition: all 0.5s;
+    z-index: 1
+}
+.notification ul::before{
+    content: '';
+    position: absolute;
+    background-color: #90cd9f;
+    height: 10px;
+    width: 10px;
+    top: -5px;
+    right: 45px;
+    transform: rotate(45deg)
+}
+.profile ul::before {
+    content: '';
+    position: absolute;
+    background-color: #90cd9f;
+    height: 10px;
+    width: 10px;
+    top: -5px;
+    transform: rotate(45deg)
+}
+
+.notification ul li,
+.profile ul li {
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 4px
+}
+.notification ul li:hover,
+.profile ul li:hover {
+    background-color: #e6e49bd2;
+}
+
+.profile ul li i {
+    margin-right: 7px
+}
