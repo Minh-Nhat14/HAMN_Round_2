@@ -58,9 +58,10 @@
     if ($conn->query($query)) {
         echo "Dữ liệu đã được đẩy lên cơ sở dữ liệu thành công. <a href='../login.php'>Thử lại</a>";
         $_SESSION['username'] = $username;
-    $_SESSION['work'] = $result['role'];
-    $_SESSION['id'] = $result['id'];
-    $_SESSION['money'] = $result['money'];
+        $_SESSION['name'] = $name;
+    $_SESSION['work'] = $work;
+    $_SESSION['id'] = $conn->insert_id;
+    $_SESSION['money'] = $money;
     // echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='../welcome.php'>Về trang chủ</a>";
     header('Location: ../index.php');
     } else {

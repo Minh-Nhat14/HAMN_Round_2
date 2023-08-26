@@ -525,7 +525,7 @@
 <script>
 
     var work = "<?php echo  $_SESSION['work']; ?>";
-    const username = "<?php echo $_SESSION['username']; ?>";
+    const username = "<?php echo $_SESSION['name']; ?>";
     if(username != "" && work != ""){
         var usern = work + ": " + username ;
         document.getElementById("pnw").innerHTML = usern;
