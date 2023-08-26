@@ -185,7 +185,7 @@
                         </ul>
                         <div class="d-flex justify-content-center mb-2" style="margin-top: 20px;display: flex!important; justify-content: space-between !important;">
                             <a onclick=call() id="ln" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Học ngay</a>
-                            <div id="id_teacher" style="display: none;">19</div>
+                            <div id="id_teacher" style="display: none;">36</div>
                             <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s" style="background-color: #fff0; border: solid 1px #FF7B2E;">Đặt lịch</a>
                         </div>
                     </div>
