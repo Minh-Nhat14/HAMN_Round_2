@@ -46,7 +46,7 @@
       <button id="answerCallButton" class="video-action-button hidden-first"><i class="fa-solid fa-phone-volume" style="color: #58c2aa; font-size: 18px;"></i></button>
       <button id="rejectCallButton" class="video-action-button hidden-first"><i class="fa-solid fa-phone-slash" style="color: #ff1f38; font-size: 18px;"></i></button>
       <button id="chatCallButton" class="video-action-button hidden-first" onclick="starchat()"><i class="fa-solid fa-comment" style="color:  #58c2aa; font-size: 18px;"></i></i></button>
-      <button id="endCallButton" class="video-action-button endcall hidden-first">Leave</button>
+      <a href="feed.php" id="endCallButton" class="video-action-button endcall hidden-first">Leave</a>
     </div>
    </div>
   <div class="right-side" id="chat_hide">
@@ -94,7 +94,7 @@
       document.getElementById('chat_hide').style.display = 'block';
     }
     function hidechat (){
-      document.getElementById('chat_hide').style.display = 'none';
+      document..style.display = 'none';
     }
   </script>
 </body>

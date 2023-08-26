@@ -1,5 +1,6 @@
 <?php
- 
+ session_start();
+ ob_start();
     // Nếu không phải là sự kiện đăng ký thì không xử lý
     if (!isset($_POST['registername'])){
         die('');
@@ -56,7 +57,12 @@
     // Thực hiện truy vấn
     if ($conn->query($query)) {
         echo "Dữ liệu đã được đẩy lên cơ sở dữ liệu thành công. <a href='../login.php'>Thử lại</a>";
-        header("Location: ../login.php");
+        $_SESSION['username'] = $username;
+    $_SESSION['work'] = $result['role'];
+    $_SESSION['id'] = $result['id'];
+    $_SESSION['money'] = $result['money'];
+    // echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='../welcome.php'>Về trang chủ</a>";
+    header('Location: ../index.php');
     } else {
         echo "Đẩy dữ liệu lên cơ sở dữ liệu thất bại: <a href='../signup.php'>Thử lại</a>". $conn->error;
     }

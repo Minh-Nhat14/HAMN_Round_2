@@ -48,7 +48,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/Spread.png" alt="" style="max-width: 100px;"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -100,9 +100,10 @@
                                                             <span>Hồ sơ</span>
                                                         </li> 
                                                         <li>
+                                                            <a href="logout.php" style="padding: 0;">
                                                             <i class="fa-solid fa-right-from-bracket"></i>
-                                                            <span>Đăng xuất</span>
-                                                         </li> 
+                                                            <span>Đăng xuất</span></a>
+                                                         </li>  
                                                     </ul> 
                                                 </div> 
                                             </div>
@@ -197,7 +198,7 @@
                                             <span>5.000VND</span>
                                         </div>
                                     </div>
-                                    <a href="./profile/c++/c++_coban.html" class="border-btn border-btn2">Xem chi tiết</a>
+                                    <a href="./profile/c++/c++_coban.php" class="border-btn border-btn2">Xem chi tiết</a>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +410,7 @@
                                <div class="single-footer-caption mb-30">
                                    <!-- logo -->
                                    <div class="footer-logo mb-25">
-                                       <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
+                                       <a href="index.php"><img src="assets/img/logo/Spread.png" alt="" style="max-width: 130px;"></a>
                                    </div>
                                    <div class="footer-tittle">
                                        <div class="footer-pera">

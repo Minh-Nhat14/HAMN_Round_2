@@ -25,7 +25,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="index.php"><img src="./assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
+                                <a href="index.php"><img src="./assets/img/logo/Spread.png" alt="" style="max-width: 100px;"></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10">
@@ -38,7 +38,7 @@
                                             <li><a href="#">Blog</a>
                                             </li>
                                             <!-- <li class="button-header margin-left "><a href="#" class="btn">Đăng ký</a></li>
-                                            <li class="button-header"><a href="login.html" class="btn btn3">Đăng nhập</a></li> -->
+                                            <li class="button-header"><a href="login.php" class="btn btn3">Đăng nhập</a></li> -->
                                         </ul>
                                     </nav>
                                 </div>
@@ -171,7 +171,7 @@
                                <div class="single-footer-caption mb-30">
                                    <!-- logo -->
                                    <div class="footer-logo mb-25">
-                                       <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
+                                       <a href="index.php"><img src="assets/img/logo/Spread.png" alt="" style="max-width: 130px;"></a>
                                    </div>
                                    <div class="footer-tittle">
                                        <div class="footer-pera">

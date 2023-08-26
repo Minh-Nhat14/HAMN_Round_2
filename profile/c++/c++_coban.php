@@ -124,6 +124,9 @@
     }
 </style>
 <body> 
+    <?php
+        session_start();
+    ?>
     <header>
         <!-- Header Start -->
         <div class="header-area header-transparent">
@@ -181,7 +184,8 @@
                             <li><a href="#!"><i class="fas fa-map-marker-alt display-25 me-3 text-secondary"></i>Đắk Lắk</a></li>
                         </ul>
                         <div class="d-flex justify-content-center mb-2" style="margin-top: 20px;display: flex!important; justify-content: space-between !important;">
-                            <a href="../../video_student.html" id="ln" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Học ngay</a>
+                            <a onclick=call() id="ln" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Học ngay</a>
+                            <div id="id_teacher" style="display: none;">19</div>
                             <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s" style="background-color: #fff0; border: solid 1px #FF7B2E;">Đặt lịch</a>
                         </div>
                     </div>
@@ -263,5 +267,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript"></script>
     <script src="../../js/testcall.js"></script>
+    <script>
+    function call(){
+        const dataToSend = document.getElementById("id_teacher").innerHTML;
+   window.location.href = "../../pay.php?data=" + encodeURIComponent(dataToSend);
+    }
+    
+
+    </script>
 </body>
 </html>

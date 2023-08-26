@@ -41,7 +41,7 @@
     }else{
     $_SESSION['username'] = $username;
     $_SESSION['work'] = $result['role'];
-    $_SESSION['id'] = $result['id'];
+    $_SESSION['id'] = $result['Id_user'];
     $_SESSION['money'] = $result['money'];
     // echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='../welcome.php'>Về trang chủ</a>";
     header('Location: ../index.php');

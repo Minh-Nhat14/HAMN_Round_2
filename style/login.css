@@ -170,3 +170,18 @@ input::placeholder{
   opacity: 0.5;
 }
 
+#back-top{
+  background: #6bc3a1;
+  height: 50px;
+  width: 50px;
+  right: 31px;
+  bottom: 18px;
+  position: fixed;
+  color: #181818bd;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 48px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
+}

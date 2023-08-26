@@ -13,8 +13,14 @@
     
 </head>
 <body>
+    <style>
+        .features-caption p{
+            color:#515151c9!important;
+        }
+    </style>
     <?php
     session_start();
+    
     if (!isset($_SESSION['username'])) {
         $_SESSION['work'] =null;
         $_SESSION['username'] = null;
@@ -30,7 +36,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/Spread.png" alt="" style="max-width: 100px;"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -41,7 +47,7 @@
                                             <ul id="navigation" style="margin: 0 20px 0 0;">                                                                                          
                                                 <li class="active" ><a href="index.php">Trang chủ</a></li>
                                                 <li><a class="kh">Khóa học</a></li>
-                                                <li><a href="blog.html">Blog</a>
+                                                <li><a href="blog.php">Blog</a>
                                                 </li>
                                                 <li id="logout" class="button-header margin-left "><a href="signup.php" class="btn">Đăng ký</a></li>
                                                 <li id="login" class="button-header"><a href="login.php" class="btn btn3">Đăng nhập</a></li>
@@ -56,7 +62,7 @@
                                                     <ul> 
                                                         <li style="background-color: #ffd4c3;">
                                                                 <i class="fa-solid fa-check" style="margin-right: 10px;"></i>
-                                                            <a href="video_teacher.html">Bạn có một khóa học <span style="color: #ff2a2a;">NGAY BÂY GIỜ </span>với AnhMinh</a>
+                                                            <a href="video_teacher.php">Bạn có một khóa học <span style="color: #ff2a2a;">NGAY BÂY GIỜ </span>với AnhMinh</a>
                                                         </li>
                                                         <li>
                                                             <i class="fa-solid fa-check" style="margin-right: 10px;"></i>
@@ -113,7 +119,7 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-7 col-md-12">
                                 <div class="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Nền tảng học trực tuyến hiệu quả</h1>
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s" style="font-family: 'Roboto', sans-serif !important;">Nền tảng học trực tuyến hiệu quả</h1>
                                     <p data-animation="fadeInLeft" data-delay="0.4s">Một nền tảng giúp bạn dễ dàng trong việc tiếp cận với các chuyên gia hoặc những người dày dặn kinh nghiệm trong lĩnh vực cụ thể.</p>
                                     <!-- <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Đăng kí</a> -->
                                 </div>
@@ -130,7 +136,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="single-services mb-30">
                             <div class="features-icon">
-                                <i class="fa-solid fa-users" style="font-size: 35px;"></i>
+                                <i class="fa-solid fa-users" style="font-size: 35px; color:blueviolet"></i>
                             </div>
                             <div class="features-caption">
                                 <h3>Cộng đồng học tập</h3>
@@ -141,7 +147,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="single-services mb-30">
                             <div class="features-icon">
-                                <i class="fa-solid fa-flask-vial" style="font-size: 35px;"></i>
+                                <i class="fa-solid fa-flask-vial" style="font-size: 35px; color:green"></i>
                             </div>
                             <div class="features-caption">
                                 <h3>Chuyên gia</h3>
@@ -152,7 +158,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="single-services mb-30">
                             <div class="features-icon">
-                                <i class="fa-solid fa-video" style="font-size: 35px;"></i>
+                                <i class="fa-solid fa-video" style="font-size: 35px; color:orange"></i>
                             </div>
                             <div class="features-caption">
                                 <h3>Phương pháp học</h3>
@@ -475,7 +481,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo mb-25">
-                                    <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/Spread.png" alt="" style="max-width: 130px;"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
