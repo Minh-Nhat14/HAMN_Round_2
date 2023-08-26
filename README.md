@@ -10,4 +10,7 @@
 - Sau đó ở nick học sinh chọn một khóa học bất kì, ấn vào học ngay và ấn nút gọi.
 - Ở nick giáo viên ấn vào thông báo và chuyển đến trang nhận cuộc gọi, ấn vào nhận cuộc gọi.
 
+- Backend sử dụng PHP, Frontend sử dụng JS, HTML, CSS.
+- Cơ sở dữ liệu MySQL, PHPMYADMIN.
+
 #Mong mọi người sẽ có trải nghiệm tốt!
