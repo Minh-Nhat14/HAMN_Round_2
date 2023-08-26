@@ -35,7 +35,9 @@
 </style>
 
 <body>
- 
+<?php
+    session_start();
+    ?>
     <header>
         <!-- Header Start -->
         <div class="header-area header-transparent">
@@ -46,7 +48,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -55,8 +57,8 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation" style="margin: 0 20px 0 0;">                                                                                          
-                                                <li class="active" ><a href="index.html">Trang chủ</a></li>
-                                                <li><a href="courses.html">Khóa học</a></li>
+                                                <li class="active" ><a href="index.php">Trang chủ</a></li>
+                                                <li><a href="courses.php">Khóa học</a></li>
                                                 <li><a href="blog.html">Blog</a>
                                                 </li>
                                                 <!-- <li class="button-header margin-left "><a href="#" class="btn">Đăng ký</a></li>
@@ -86,7 +88,7 @@
                                         <div class="dropdown"> 
                                             <div class="profile"> 
                                                 <img class="dropbtn" src="https://nhanvietluanvan.com/wp-content/uploads/2023/05/c6e56503cfdd87da299f72dc416023d4-736x620.jpg"> 
-                                                <p>GV: Trần Minh Nhật</p>
+                                                <p><?php echo  $_SESSION['work']; ?>: <?php echo $_SESSION['username']; ?>
                                                 <div class="dropdown-content"> 
                                                     <ul> 
                                                         <li>
@@ -129,7 +131,7 @@
                                     <!-- breadcrumb Start-->
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                                            <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
                                             <li class="breadcrumb-item"><a href="#">Khóa học</a></li> 
                                         </ol>
                                     </nav>
@@ -407,7 +409,7 @@
                                <div class="single-footer-caption mb-30">
                                    <!-- logo -->
                                    <div class="footer-logo mb-25">
-                                       <a href="index.html"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
+                                       <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
                                    </div>
                                    <div class="footer-tittle">
                                        <div class="footer-pera">
@@ -428,7 +430,7 @@
                            <div class="col-xl-12 ">
                                <div class="footer-copy-right text-center">
                                    <p>
-                                     Được thiết kế bởi <a href="index.html" target="_blank">HAMN</a>
+                                     Được thiết kế bởi <a href="index.php" target="_blank">HAMN</a>
                                    </p>
                                  </div>
                              </div>

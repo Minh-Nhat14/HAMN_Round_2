@@ -25,7 +25,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="index.html"><img src="./assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
+                                <a href="index.php"><img src="./assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10">
@@ -34,7 +34,7 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation" style="margin: 0 20px 0 0;">                                                                                          
-                                            <li class="active" ><a href="index.html">Trang chủ</a></li>
+                                            <li class="active" ><a href="index.php">Trang chủ</a></li>
                                             <li><a href="#">Blog</a>
                                             </li>
                                             <!-- <li class="button-header margin-left "><a href="#" class="btn">Đăng ký</a></li>
@@ -69,7 +69,7 @@
                                     <!-- breadcrumb Start-->
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                                            <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
                                             <li class="breadcrumb-item"><a href="#">Blog</a></li> 
                                         </ol>
                                     </nav>
@@ -171,7 +171,7 @@
                                <div class="single-footer-caption mb-30">
                                    <!-- logo -->
                                    <div class="footer-logo mb-25">
-                                       <a href="index.html"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
+                                       <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
                                    </div>
                                    <div class="footer-tittle">
                                        <div class="footer-pera">
@@ -192,7 +192,7 @@
                            <div class="col-xl-12 ">
                                <div class="footer-copy-right text-center">
                                    <p>
-                                     Được thiết kế bởi <a href="index.html" target="_blank">HAMN</a>
+                                     Được thiết kế bởi <a href="index.php" target="_blank">HAMN</a>
                                    </p>
                                  </div>
                              </div>

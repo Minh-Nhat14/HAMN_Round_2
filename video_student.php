@@ -8,6 +8,8 @@
 
 </head>
 <body>
+  <?php session_start();
+  ?>
 <!-- partial:index.partial.html -->
 <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet"> 
 <div class="app-container">

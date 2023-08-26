@@ -13,7 +13,7 @@
     <!-- form signup -->
     <div class="main">
         
-        <form action="./php/signup.php" method="POST" class="form">
+        <form action="./php/upsignup.php" method="POST" class="form">
         <h3>Đăng Ký</h3>
 
         <div class="form-group">
@@ -23,7 +23,7 @@
         </div>
 
           <div class="form-group">
-            <label  for="fullname" class="form-group-label">Tên đăng nhập</label></br>
+            <label  for="email" class="form-group-label">Tên đăng nhập</label></br>
             <input type="text" name="registerusername"
             placeholder="VD: Trần Minh Nhật" class="input-signup-username form-group-input">
           </div>
@@ -32,8 +32,8 @@
           <div class="form-group">
             <label for="email" class="form-group-label">Bạn muốn làm</label></br>
             <select name="registerwork" class="input-signup-work form-group-input">
-                <option value="Nam">Học sinh</option>
-                <option value="Nu">Giáo viên</option>
+                <option value="Học sinh">Người học</option>
+                <option value="Giáo viên">Người chia sẻ kinh nghiệm</option>
             </select>
           </div>
     

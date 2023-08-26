@@ -13,6 +13,13 @@
     
 </head>
 <body>
+    <?php
+    session_start();
+    if (!isset($_SESSION['username'])) {
+        $_SESSION['work'] =null;
+        $_SESSION['username'] = null;
+     }
+    ?>
     <header>
         <!-- Header Start -->
         <div class="header-area header-transparent">
@@ -23,7 +30,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 100px;"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -32,12 +39,12 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation" style="margin: 0 20px 0 0;">                                                                                          
-                                                <li class="active" ><a href="index.html">Trang chủ</a></li>
+                                                <li class="active" ><a href="index.php">Trang chủ</a></li>
                                                 <li><a class="kh">Khóa học</a></li>
                                                 <li><a href="blog.html">Blog</a>
                                                 </li>
-                                                <li id="logout" class="button-header margin-left "><a href="./login_out/signup.html" class="btn">Đăng ký</a></li>
-                                                <li id="login" class="button-header"><a href="./login_out/login.html" class="btn btn3">Đăng nhập</a></li>
+                                                <li id="logout" class="button-header margin-left "><a href="signup.php" class="btn">Đăng ký</a></li>
+                                                <li id="login" class="button-header"><a href="login.php" class="btn btn3">Đăng nhập</a></li>
                                             </ul>
                                         </nav>
                                     </div>   
@@ -48,7 +55,7 @@
                                                 <div class="dropdown-content"> 
                                                     <ul> 
                                                         <li style="background-color: #ffd4c3;">
-                                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>
+                                                                <i class="fa-solid fa-check" style="margin-right: 10px;"></i>
                                                             <a href="video_teacher.html">Bạn có một khóa học <span style="color: #ff2a2a;">NGAY BÂY GIỜ </span>với AnhMinh</a>
                                                         </li>
                                                         <li>
@@ -62,20 +69,25 @@
                                         <div class="dropdown"> 
                                             <div class="profile"> 
                                                 <img class="dropbtn" src="https://nhanvietluanvan.com/wp-content/uploads/2023/05/c6e56503cfdd87da299f72dc416023d4-736x620.jpg"> 
-                                                <p id="pnw">GV: Trần Minh Nhật</p>
+                                                <p id="pnw"></p>
                                                 <div class="dropdown-content"> 
                                                     <ul> 
                                                         <li>
+                                                        <a href="" style="padding: 0;">
                                                             <i class="fa-solid fa-gear"></i>
                                                             <span>Cài đặt</span>
+                                                        </a>
                                                         </li>
                                                         <li>
+                                                        <a href="" style="padding: 0;">
                                                             <i class="fa-solid fa-user"></i>
                                                             <span>Hồ sơ</span>
+                                                         </a>                                                        
                                                         </li> 
                                                         <li>
+                                                            <a href="logout.php" style="padding: 0;">
                                                             <i class="fa-solid fa-right-from-bracket"></i>
-                                                            <span>Đăng xuất</span>
+                                                            <span>Đăng xuất</span></a>
                                                          </li> 
                                                     </ul> 
                                                 </div> 
@@ -463,7 +475,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo mb-25">
-                                    <a href="index.html"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/SpreadED.png" alt="" style="max-width: 130px;"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -484,7 +496,7 @@
                         <div class="col-xl-12 ">
                             <div class="footer-copy-right text-center">
                                 <p>
-                                  Được thiết kế bởi <a href="index.html" target="_blank">HAMN</a>
+                                  Được thiết kế bởi <a href="index.php" target="_blank">HAMN</a>
                                 </p>
                               </div>
                           </div>
@@ -505,10 +517,10 @@
 <script src="./assets/js/slick.min.js"></script>
 <script src="./assets/js/main.js"></script>
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const username = urlParams.get('username');
-    const work = urlParams.get('work');
-    if(username != null && work != null){
+
+    var work = "<?php echo  $_SESSION['work']; ?>";
+    const username = "<?php echo $_SESSION['username']; ?>";
+    if(username != "" && work != ""){
         var usern = work + ": " + username ;
         document.getElementById("pnw").innerHTML = usern;
         document.getElementById('logout').style.display = 'none';
@@ -525,17 +537,17 @@
     const ln=document.querySelector(".courses-actives");
     const kh=document.querySelector(".kh");
     ln.addEventListener("click", function(){
-        if(username == null && work == null){
-            window.location.href = "../login_out/login.html";
+        if(username == "" && work == ""){
+            window.location.href = "login.php";
         }else{
-            window.location.href = "courses.html";
+            window.location.href = "courses.php";
         }
     })
     kh.addEventListener("click", function(){
-        if(username == null && work == null){
-            window.location.href = "../login_out/login.html";
+        if(username == "" && work == ""){
+            window.location.href = "login.php";
         }else{
-            window.location.href = "courses.html";
+            window.location.href = "courses.php";
         }
     })
     </script>
